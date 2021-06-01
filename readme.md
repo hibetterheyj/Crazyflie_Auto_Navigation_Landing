@@ -2,15 +2,18 @@
 
 > Members: Yujie He, [Jianhao Zheng](https://github.com/Jianhao-zheng/), and [Longlai Qiu](https://github.com/kevinxqiu)
 >
-> **:smile: Code coming soon!**
 
 
 
-## Goal: Autonomous Navigation and Landing for Crazyfile
+## Goal: Autonomous Navigation and Landing for Crazyflie
 
 In this practical, we programed based on [Crazyflie  2.1](https://www.bitcraze.io/products/crazyflie-2-1/) to find and precisely land on a platform with height of 10 cm by utilizing z reading from [flow deck](https://www.bitcraze.io/products/flow-deck-v2/). Additionally, We also utilized sensor readings from [multi-ranger deck](https://www.bitcraze.io/products/multi-ranger-deck/) to avoid the obstacles presented in the environment.
 
 <p align="center"><img src="./pics/cover.jpg" alt="cover" width="800"/></p>
+<details open>   <summary><b>Demo Video</b></summary> <div align="center"> 
+<iframe width="560" height="450" src="https://www.youtube.com/embed/RP4-SlhOIUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> </details>
+
 
 
 ## Pipeline
@@ -21,7 +24,25 @@ In this practical, we programed based on [Crazyflie  2.1](https://www.bitcraze.i
 
 
 
-## Demo
+## Code Demo
+
+> Code folder: `./code/crazyflie-lib-python/group_7/`
+
+```
+.
+├── cf_load_params.py
+├── cf_search.py
+├── cf_state_class.py
+├── cf_utilis.py
+├── overall.py
+├── draw_traj_demo.py
+├── logs
+│   ├── overall-20210530_1930_x.csv
+│   ├── overall-20210530_1930_x_half.csv
+│   ├── overall-20210530_1930_y.csv
+│   └── overall-20210530_1930_y_half.cs
+└── readme.md
+```
 
 - `overall.py`: overall pipeline from taking off to landing.
 
@@ -75,6 +96,9 @@ The estimated values drift considerably after long flights. Moreover, the predic
 
 
 
+## Presentation
+
+<details open>   <summary><b>Slide</b></summary> <div align="center"> <iframe src="https://drive.google.com/file/d/1vY_UMflVXOcUSOASHkGHsSTXCBmwrVhK/preview" width="560" height="400"></iframe> </div> </details>
 ## Acknowledgement
 
 Thanks to Prof. Dario Floreano and TAs from LIS at EPFL for these amazing tutorials and examples!
